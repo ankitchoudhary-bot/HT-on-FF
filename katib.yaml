@@ -3,11 +3,7 @@ description: Generic hyperparameter tuning using Katib for a given model type.
 inputs:
   - name: model_type
     type: String
-    description: Type of model to tune.
-    enum:
-      - sklearn
-      - xgboost
-      - pytorch
+    description: "Model type: Choose one of ['sklearn', 'xgboost', 'pytorch']"
   - {name: X_train, type: JsonArray}
   - {name: y_train, type: JsonArray}
 outputs:
