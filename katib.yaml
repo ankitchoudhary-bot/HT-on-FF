@@ -1,7 +1,7 @@
 name: Tune Hyperparameters
 description: Generic hyperparameter tuning using Katib for a given model type.
 inputs:
-  - {name: model_type, type: String, description: Choose one of ['sklearn', 'xgboost', 'pytorch']}
+  - {name: model_type, type: String, description: "Choose one of ['sklearn', 'xgboost', 'pytorch']"}
   - {name: X_train, type: JsonArray}
   - {name: y_train, type: JsonArray}
 outputs:
